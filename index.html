@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>Lập trình wed căn bản</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1>HTML Căn Bản</h1>
+		<!-- Hướng dẫn sử dụng html cơ bản -->
+		<h2>1. Chèn ảnh vào trang wed</h2>
+			<p><span class="name">Để chèn ảnh </span> vào trang wed ta có thể sử dụng đoạn element <q>img src</q>, ví dụ:<br> 
+			<a download title="Avatar" href="images/track-circle-edit.png">
+				<img src="track-circle-edit.png" alt="avata" width="140" height="140">
+			</a>
+
+		<h2>2. Chèn link vào trang wed</h2>
+			<p><span class="name">Để chèn link</span> vào trang wed ta sử dụng đoạn element <q>a heft</q>, ví dụ:<br>
+			<a href="https://sites.google.com/site/nhatnguyendrgs/" title="nhatnguyendrgs">https://sites.google.com/site/nhatnguyendrgs</a>
+
+		<h2>Chèn danh sách</h2>
+			<p><span class="name">Để chèn một danh sách</span> ta dùng element <q>ol (viết tắt của odered list) và li</q>, ví dụ:<br></p>
+			<ol start="1">
+				<li>Facebook</li>
+				<li>Google</li>
+				<li>Yahoo</li>
+				<li>Git Hub</li>
+			</ol>
+			<p>Ngoài ra có thể dùng element <q>ul (viết tắt của unordered list)</q> nếu không đếm thứ tự, ví dụ:<br></p>
+			<ul id="quoteList">
+				<li>Facebook</li>
+				<li>Google</li>
+				<li>Yahoo</li>
+				<li>Git Hub</li>
+			</ul>
+
+		<h2>3. Danh sách miêu tả</h2>
+			<p>Sử dụng element <q>dl (description list)</q> ta có đoạn mã sau:</p>
+			<dl>
+				<dt>HTML</dt>
+				<dd>
+					HTML là ngôn ngữ wed phổ biến rất thú vị và hấp dẫn.Bạn có thể sử dụng html và học tập trên mạng.
+				</dd>
+				<dt>CSS</dt>
+				<dd>
+					CSS là công cụ mạnh mẽ hỗ trợ html và thú vị.
+				</dd>
+			</dl>
+
+		<h2>4. Căn dòng</h2>
+			<p>Sử dụng element <q>pre</q> giúp căn dòng hợp lý ví dụ đoạn trích sau:<br></p>
+			<pre>
+				HTML là ngôn ngữ wed phổ biến rất thú vị và hấp dẫn.Bạn có thể sử dụng html và học tập trên mạng.
+				CSS là công cụ mạnh mẽ hỗ trợ html và thú vị.
+			</pre>
+
+		<h2>5. Tạo bảng</h2>
+			<p>
+				Để tạo bảng ta cần sử dụng các element riêng biệt, dưới đây là một bảng ví dụ:<br>
+				<table>
+					<caption>Những element tạo bảng</caption>
+					<tr>
+						<th>Element</th>
+						<th>Tác dụng</th>
+					</tr>
+					<tr>
+						<td>table</td>
+						<td>Giống như các element ol, ul và dl bao gồm toàn bộ danh sách của nó.</td>
+					</tr>
+					<tr>
+						<td>caption</td>
+						<td>Element đưa ra tiêu đề cho bảng</td>
+					</tr>
+					<tr>
+						<td>tr</td>
+						<td>Element đại diện cho một hàng của bảng</td>
+					</tr>
+					<tr>
+						<td>th</td>
+						<td>Element miêu tả các ô tiêu đề</td>
+					</tr>
+					<tr>
+						<td>td</td>
+						<td>Element miêu tả các ô bình thường</td>
+					</tr>
+				</table>
+			</p>
+
+		<h2>6. Tạo Form</h2>
+			<p>Dưới đây là một form cơ bản: <br> </p>
+			<form>
+				<input type="button" value="Xem chi tiết"><br>
+
+				<p>Tên đầy đủ của bạn là gì?</p>
+				Họ và tên: <input type="text" name="fullname">
+
+				<p>Môn học bạn yêu thích?</p>
+				<input type="checkbox" name="subject" value="Math">Toán<br>
+				<input type="checkbox" name="subject" value="Infomatic">Tin<br>
+				<input type="checkbox" name="subject" value="Physical">Lý<br>
+				<input type="checkbox" name="subject" value="Chemistry">Hóa<br>
+
+				<p>Bạn có đã từng học html?</p>
+				<input type="radio" name="learn" value="Yes" checked>Có<br>
+				<input type="radio" name="learn" value="No">Không<br>
+
+				<p>Chọn ảnh đại diện</p>
+				<p><input type="file" name="avatar" accept="image/png"><br></p>
+			</form>
+			<form action="sign_in.aspx" method="post">
+					<fieldset>
+						<legend>Thông tin đăng nhập:</legend>
+						Username: <input type="text" name="username" size="14"><br><br>
+						Password: <input type="password" name="pass" size="14" maxlength="44"></p>
+						<input type="submit" value="Đăng nhập"><br>
+					</fieldset>
+				
+			</form>
+			<br><textarea name="comments" rows="14" cols="84">Nhận xét của bạn về trang wed. Chân thành cảm ơn!</textarea><br>
+			Chọn môn học mà bạn thích:
+			<select name="subject">
+				<option value="Math">Toán</option>
+				<option value="Physical">Lý</option>
+				<option value="Chemistry">Hoá</option>
+			</select><br><br>
+
+			<form>
+				<label for="selectColor">Chọn màu bạn yêu thích: </label>
+				<input type="color" name="kitColor" id="selectColor"><br><br>
+
+				<label for="selectBirthday">Sinh nhật của bạn</label>
+				<input type="date" name="birthday" id="selectBirthday"><br><br>
+
+				<label for="selectTime">Báo thức</label>
+				<input type="time" name="dataTime" id="selectTime"><br><br>
+
+				<label for="rateFilm">Chấm điểm bộ phim "Big Hero 6": </label>
+				<input type="number" name="filmScore" id="rateFilm" min="1" max="10"><br><br
+			</form>
+		<h2>7. Chèn audio</h2>
+			<p>Đây bài hát sau khi được chèn:</p>
+			<audio controls autoplay loop src="audio/good-time.mp3"></audio>
+	</body>
+	<hr>
+	<div id="footer">
+		<a class="facebook" href="http://www.facebook.com" title="Facebook">Facebook</a>
+	</div>
+<html>
