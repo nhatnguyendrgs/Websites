@@ -1,0 +1,101 @@
+#header{
+	width: 1100px;
+	height: 150px;
+	background-color: #faf5d5;
+	margin: 10px auto;
+}
+header img{
+	float: right;
+}
+#footer{
+	text-align: right;
+}
+h1{
+	font-family: Verdana; /*Font chữ*/
+	font-size: xx-large; /*Cỡ chữ*/
+	font-weight: 1400; /*Độ đâmh của tiêu đề*/
+	text-align: center;
+	color: blue;
+	background: white;
+}
+h2{
+	font-family: none;
+	font-size: 24px;
+	text-align: left;
+	color: red;
+	background: white;
+}
+body{
+	background-color: rgb(255,255,255); /*Chọn màu nền*/
+	border-width: 400px; /*Chiều ngang*/
+	margin: 4px 14%;
+}
+p{
+	line-height: 1.5em; /*Chiều cao*/
+	text-align: justify;
+	color: black;
+}
+q{
+	font-style: italic; /*Chữ nghiên*/
+	color: green;
+}
+a{
+	text-decoration: none;
+}
+table{
+	border: 2px solid black;
+	margin: 2px auto;
+	font-size: x-large;
+	caption-side: top; 
+}
+td,th{
+	padding: 14px;
+	border:1px solid black;
+}
+tr:nth-child(1){
+	background-color: #FF4500;
+}
+tr:nth-child(2n+1){
+	background-color: gray;
+}
+caption{
+	font-weight: bold;
+	padding-top: 10px;
+}
+#quoteList{
+	list-style-type: circle;
+	/*Tạo border*/
+	border-width: 2px; /*Border độ rộng*/
+	border-color: brown; /*Màu border*/
+	border-style: solid; /*Tạo hiệu ứng*/
+	
+	/*Tạo padding*/
+	padding: 24px;
+
+	/*Tạo margin*/
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-left: 24px;
+	margin-right: 24px;
+}
+#help-img{
+	display: block;
+	margin: auto;
+}
+#allContent{
+	width: 400px;
+	margin: 15px auto;
+}
+.name{
+	font-weight: bold;
+}
+.facebook{
+	font-family: serif; /*Font chữ*/
+	font-weight: bold; /*In đậm chữ*/
+	text-decoration: none; /*Gạch chân*/
+	border:blue 1px solid; /*Tạo viền cho link*/
+	border-radius: 0px; /*Tạo độ cong cho viền*/
+	padding: 5px; /*Khoảng cách giữa các viền*/
+	background-color: blue; /*Nền*/
+	color: white; /*Màu chữ*/
+}
